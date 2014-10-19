@@ -1,0 +1,48 @@
+﻿body{
+margin: 0px;
+padding: 0px;
+background: gray;
+position: relative;
+}
+.box {
+background: white;
+width: 128px;
+height: 128px;
+box-shadow: 0px 0px 10px #808080;
+position: absolute;
+float: left;
+/*transition: all 1s;*/
+}
+
+.box:hover{
+width: 256px;
+height: 256px;
+transform: rotate(360deg) !important;
+-webkit-transform: rotate(360deg) !important;
+z-index: 11;
+}
+
+.box img{
+padding: 10px;
+/*transition: all 1s;*/
+}
+
+.box:hover .image{
+width: 236px;
+height: 190px;
+background-size:236px 190px!important;
+}
+
+
+#info{
+background:#000000;
+width:100%;
+padding:10px;
+color:#FFFFFF;
+}
+
+.image{
+margin:10px;
+width:108px;
+height:88px;
+}
