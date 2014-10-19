@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+	
+	
+	
+	$('#selectall').change(function(){
+	
+	if($(this).is(':checked')){
+	$(".postid").prop('checked', true);
+	}else{
+	
+	$('.postid').removeAttr('checked');
+	}
+	
+	
+	
+	
+
+
+	
+	
+	
+	});
+	
+	
+
+	
+	
+	
+	});
+
+
+
+
+</script>
+
+
+
+
+</head>
+<body>
+
+	<input type="checkbox" id="selectall"> Alle auswählen
+	<div class="post"><input class="postid" type="checkbox" value="1"> Kommentar:1</div>
+	<div class="post"><input class="postid" type="checkbox" value="2"> Kommentar:2</div>
+	<div class="post"><input class="postid" type="checkbox" value="3"> Kommentar:3</div>
+	<div class="post"><input class="postid" type="checkbox" value="4"> Kommentar:4</div>
+
+
+</body>
+</html>

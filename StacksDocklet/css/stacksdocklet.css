@@ -1,0 +1,38 @@
+﻿body{
+margin: 0px;
+padding: 0px;
+background: gray;
+position: relative;
+font-family: tahoma;
+color: white;
+position:relative;
+}
+
+.stack{
+transition:all 1s;
+-moz-transition:all 1s;
+width: 960px;
+text-align: left;
+position: absolute; 
+top: 512px; 
+left: 256px;
+border:1px solid rgba(0, 0 , 0, .0);
+-webkit-background-clip: padding-box; /* for Safari */
+background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+}
+
+.stack img{
+margin-left:140px;
+}
+
+.desc{
+position:absolute;
+top:20px;
+left:0px;
+font-size: small;
+display:none;
+background: #191919;
+opacity: 0.5;
+padding: 4px;
+border-radius: 10px;
+}

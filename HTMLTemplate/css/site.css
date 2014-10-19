@@ -1,0 +1,169 @@
+html{
+height:101%;
+}
+
+body{
+margin:0;
+padding:0;
+}
+#wrapper{
+margin:0 auto;
+max-width:800px;
+min-width:400px;
+}
+
+
+/* Header */
+
+header, footer{
+height:120px;
+position:relative;
+}
+
+#sitetitle{
+text-align:center;
+}
+
+#siteslogan{
+text-align:center;
+}
+
+/* Suche */ 
+#searchform{
+position:absolute;
+top:10px;
+right:10px;
+}
+#searchbutton{
+padding:10px;
+background:#2E2E2E;
+color:silver;
+border:none;
+outline:none;
+}
+
+#searchtext{
+background:#2E2E2E;
+padding:10px;
+color:silver;
+border:1px solid #2E2E2E;
+}
+
+#searchbutton:hover{
+color:black;
+background:silver;
+
+}
+
+#searchtext{
+border-right:1px solid silver;
+}
+
+
+
+/* Content */ 
+
+main{
+padding:10px;
+}
+.clear{
+clear:both;
+}
+
+article{
+position:relative;
+}
+
+.publishdate{
+position:absolute;
+right:0;
+top:0;
+font-size:0.8em;
+color:silver;
+}
+
+hr{
+color: #2E2E2E;
+}
+
+
+
+/* Bilder */
+.floatimgleft{
+float:left;
+margin:10px;
+}
+
+.floatimgright{
+float:right;
+margin:10px;
+}
+
+
+
+
+/* Hauptnavigation */
+#mainnavul{
+margin:0;
+padding:0;
+}
+
+#mainnavul li{
+float:left;
+list-style-type:none;
+position:relative;
+}
+#mainnavul li a{
+padding:10px;
+}
+
+.submenu{
+display:none;
+}
+
+#mainnavul li:hover .submenu{
+display:block;
+margin:0px!important;
+padding:0px!important;
+
+position:absolute;
+left:0px;
+box-shadow: 0 0 10px black;
+background:#2E2E2E;
+z-index:9000;
+}
+
+.submenu li{
+float:none!important;
+}
+
+.submenu li a{
+border:none!important;
+padding:10px!important;
+}
+.submenu li a:hover{
+background:black!important;
+color:white!important;
+}
+
+.activetab{
+background:white;
+}
+.activetab>a{
+background:white;
+border-right:none!important;
+}
+
+
+
+
+
+
+
+
+#copyright{
+position:absolute;
+right:10px;
+bottom:10px;
+}
+

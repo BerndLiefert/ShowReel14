@@ -1,0 +1,100 @@
+body{
+font-family:Tahoma;
+background:silver url(../bg.png);
+}
+#wrapper{
+background:white;
+
+border: 10px solid rgba(60, 60, 60, .5);
+-webkit-background-clip: padding-box; /* for Safari */
+background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+}
+
+
+
+/* Header*/
+header, footer{
+background:#01A9DB;
+}
+#sitetitle{
+color:white;
+margin:0;
+padding:10px 0 0 10px;
+font-size:3em;
+}
+
+#siteslogan{
+color:white;
+font-style:italic;
+margin:0px;
+padding:0 0 0 10px;
+font-size:1em;
+}
+
+
+/* Hauptnavigation */
+#mainnavigation{
+background:#2E2E2E;
+}
+
+#mainnavul li a{
+display:inline-block;
+color:gray;
+text-decoration:none;
+}
+
+#mainnavul li:last-child a{
+border:none;
+}
+
+#mainnavul li:hover{
+background:silver;
+}
+#mainnavul li:hover a{
+color:black;
+}
+
+.submenu{
+background:#01A9DB!important;
+}
+.submenu li a{
+color:black!important;
+width:100px;
+}
+
+/* Tabellen */ 
+
+.mytable{
+border-collapse:collapse;
+}
+
+.mytable th{
+background:#01A9DB;
+color:white;
+}
+
+.mytable tr:nth-child(even){
+background:silver;
+}
+
+.mytable tr:hover{
+background:gray;
+color:white;
+}
+
+
+/* Bilder */ 
+figcaption{
+color:silver;
+font-size:0.8em;
+}
+
+/* Listen */
+.myullist{
+list-style-image:url(../list.png);
+}
+
+/* Footer */
+#copyright{
+color:white;
+}

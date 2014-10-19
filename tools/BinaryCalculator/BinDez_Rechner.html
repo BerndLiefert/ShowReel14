@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+
+$(document).ready(function(){
+
+});
+
+
+function berechne(){
+
+
+var dezi = $('#dezimal').val();
+var multi = 1;
+
+//höchste 2er Potzenz finden
+while(dezi > multi){
+multi *= 2;
+}
+
+if(multi > dezi){
+multi = multi / 2;
+}
+
+
+var bin = '';
+//Zwischenergebnis
+var zerg = 0;
+var zerg2 = 0;
+
+while (multi >= 1){
+zerg2 = dezi - multi;
+
+if(zerg2 >=0){
+zerg = dezi - multi;
+}else{
+zerg = zerg;
+}
+
+console.log(dezi + ' - ' + multi + ' zwischenergebnis: '+ zerg);
+
+if(multi <= dezi){
+bin = bin + '1';
+}else{
+bin = bin + '0';
+}
+
+multi = multi / 2;
+
+console.log('bin:' + bin);
+dezi = zerg;
+}
+
+
+
+
+
+
+
+//---------------------------------------------------------------------
+
+var binary =  $('#binaer').val();
+var ergbin = 0;
+var multi = 1;
+var number = 0;
+
+for(var n = binary.length; n>0; n--){
+console.log('basis: '+multi);
+number = binary.substr(n-1, 1);
+console.log('number: '+number +'binlength'+binary.length);
+
+ergbin = ergbin + number * multi;
+console.log(ergbin);
+
+multi = multi * 2;
+}
+ 
+ 
+
+$('#d').text(bin);
+$('#b').text(ergbin);
+
+}
+</script>
+<style type="text/css">
+body{
+font-family: tahoma;
+font-size: xx-large;
+background: orange;
+text-align: center;
+}
+#dezimal{
+border: 1px solid black;
+}
+
+#binaer{
+border: 1px solid black;
+}
+#mybutton{
+border: none;
+background: black;
+color: white;
+padding: 8px;
+font-size: xx-large;
+}
+input{
+font-size: xx-large;
+}
+
+
+
+
+</style>
+</head>
+<body>
+<h1>Bernd's Binär-/Dezimalrechner für faule Informatiker</h1>
+<center>
+<table border="0px">
+    <tr>
+	<td>Dezimalzahl:</td><td><input type="text" id="dezimal"></td>
+	</tr>
+	<tr>
+    <td>Binärzahl:</td><td><input type="text" id="binaer"></td>
+	</tr>
+	<tr>
+	<td></td><td><button id="mybutton" onclick="berechne();">berechne!</button></td>
+	</tr>
+	<tr>
+	<td>Dezimal:</td><td><span id="b"></span></td>
+	</tr>
+	<tr>
+	<td>Binär:</td><td><span id="d"></span></td>
+	</tr>
+	
+</table>
+</center>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+@CHARSET "ISO-8859-1";
+
+
+*{
+	margin:0;
+	padding:0;
+	font-family:Tahoma,Arial,sans-serif;
+}
+
+
+#forkme{
+	position:fixed;
+	top:0px;
+	right:0px;
+	z-index:9000;
+	
+}
+
+html{
+	overflow-y: scroll;
+	
+}
+
+html, body, #wrapper{
+min-height:800px;
+	
+}
+
+#wrapper{
+	width:860px;
+	margin:0 auto;
+}
+
+.keyword{
+color:red;
+}
+
+.comment{
+color:gray;
+}
+
+.mycodehighlight{
+margin:10px;
+padding:10px;
+background:#D8D8D8;
+}
+
+.rownumbers{
+padding:10px 0 10px 0;
+margin:10px 0 10px 10px;
+width:18px;
+float:left;
+border-right:1px solid red;
+}
+
+#preview{
+float:left;
+}
+
+.clear{
+clear:both;
+}
+
+#input{
+margin:10px;
+border:1px solid black;
+}
+
+#translate{
+border:none;
+padding:10px;
+background:black;
+color:white;
+transition:all 1s;
+}
+#translate:hover{
+background:silver;
+color:black;
+}
+
+.blue{
+color:#5882FA;
+}

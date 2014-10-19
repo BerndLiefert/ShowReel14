@@ -1,0 +1,150 @@
+body, p, ul, h1 {
+margin: 0px;
+padding: 0px;
+}
+body {
+color: white;
+font-family: Arial,Helvetica,sans-serif;
+font-weight: inherit;
+background-color: white;
+}
+#wrapper {
+margin: 0px auto;
+background-color: transparent;
+width: 1020px;
+}
+.square {
+margin: 5px;
+float: left;
+width: 160px;
+height: 160px;
+position: relative;
+background-color: #19c0fd;
+}
+.square:hover {
+margin: 10px;
+width: 150px;
+height: 150px;
+}
+.rectangle {
+margin: 5px;
+float: left;
+height: 160px;
+position: relative;
+width: 330px;
+background-color: #19c0fd;
+}
+.rectangle:hover {
+margin: 10px;
+width: 320px;
+height: 150px;
+}
+a {
+color: white;
+text-decoration: none;
+}
+.box {
+width: 340px;
+height: 510px;
+float: left;
+}
+
+.rectangle a, .square a{
+display:inline-block;
+height:150px;
+width:100%;
+}
+
+.clear {
+clear: both;
+}
+.index {
+display: block;
+position: absolute;
+bottom: 10px;
+left: 10px;
+}
+#menu {
+height: 80px;
+position: relative;
+}
+#menu h1 {
+font-family: Segoe UI;
+float: left;
+}
+h1 {
+font-family: Arial,Helvetica,sans-serif;
+color: #19c0fd;
+margin-top: 10px;
+margin-left: 5px;
+}
+#user {
+position: absolute;
+right: 50px;
+top: 30px;
+color: #19c0fd;
+}
+#bild {
+position: absolute;
+right: 5px;
+top: 24px;
+}
+#ueber_mich {
+background-image: url(cs21a.png);
+background-position: center center;
+background-repeat: no-repeat;
+}
+#impressum {
+background-image: url(cs21a.png);
+background-position: center center;
+background-repeat: no-repeat;
+}
+#comics {
+background-image: url(cs21a.png);
+background-position: center center;
+background-repeat: no-repeat;
+}
+#lego {
+background-image: url(cs21a.png);
+background-position: center center;
+background-repeat: no-repeat;
+}
+#projekte {
+background-image: url(cs21a.png);
+background-repeat: no-repeat;
+background-position: center center;
+}
+#fotos {
+background-color: #ffa31a;
+background-image: url(cs21a.png);
+background-position: center center;
+background-repeat: no-repeat;
+}
+#blog {
+
+}
+#rss {
+background-image: url(cs21a.png);
+background-position: center center;
+background-repeat: no-repeat;
+}
+#email {
+background-image: url(cs21a.png);
+background-position: center center;
+background-repeat: no-repeat;
+}
+#twitter {
+background-image: url(cs21a.png);
+background-repeat: no-repeat;
+background-position: center center;
+}
+#youtube {
+background-image: url(cs21a.png);
+background-position: center center;
+background-repeat: no-repeat;
+}
+#facebook {
+background-image: url(cs21a.png);
+background-position: center center;
+background-repeat: no-repeat;
+}
